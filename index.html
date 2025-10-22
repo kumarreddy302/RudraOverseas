@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Website Under Construction</title>
+  <meta name="description" content="We're building something new. Check back soon!" />
+  <meta name="robots" content="noindex,nofollow" />
+
+  <!-- Social preview (optional) -->
+  <meta property="og:title" content="Website Under Construction" />
+  <meta property="og:description" content="We're building something new. Check back soon!" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚧</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- animated caution background -->
+  <div class="caution-bg" aria-hidden="true"></div>
+
+  <main class="card" role="main">
+    <span class="badge" aria-hidden="true">🚧</span>
+    <h1>Site under construction</h1>
+    <p class="lead">We’re busy putting the finishing touches on something great.</p>
+
+    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="build progress">
+      <span class="progress-bar"></span>
+    </div>
+
+    <div class="actions">
+      <a class="btn" href="mailto:hello@example.com">Email us</a>
+      <a class="btn btn-ghost" href="#" aria-disabled="true" tabindex="-1">Notify me</a>
+    </div>
+
+    <p class="eta">Estimated launch: <strong>Soon™</strong></p>
+
+    <footer>
+      <small>© <span id="year"></span> Your Company • <a href="/" aria-disabled="true" tabindex="-1">Home</a></small>
+    </footer>
+  </main>
+
+  <script>
+    // set current year and enable reduced-motion friendly progress
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
